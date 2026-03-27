@@ -44,3 +44,11 @@ setTimeout(() => {
 function closeModal() {
   document.getElementById("stillPayingModal").classList.add("hidden");
 }
+
+
+function scrollToContent() {
+  window.scrollTo({
+    top: window.innerHeight,
+    behavior: "smooth"
+  });
+}
