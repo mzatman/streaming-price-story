@@ -32,3 +32,15 @@ window.onload = function() {
       platform.charAt(0).toUpperCase() + platform.slice(1);
   }
 };
+
+/*new*/
+setTimeout(() => {
+  const modal = document.getElementById("stillPayingModal");
+  if (modal) {
+    modal.classList.remove("hidden");
+  }
+}, 8000);
+
+function closeModal() {
+  document.getElementById("stillPayingModal").classList.add("hidden");
+}
