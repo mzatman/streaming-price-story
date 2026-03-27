@@ -2,47 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dashboard</title>
+  <title>StreamStats</title>
   <link rel="stylesheet" href="../css/styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
-  <nav class="navbar">
+  <!-- NAVBAR -->
+  <div class="navbar">
     <h2>StreamStats</h2>
-    <ul>
-      <li>Home</li>
-      <li>Platforms</li>
-      <li>About</li>
-    </ul>
-  </nav>
+    <div class="nav-links">
+      <span>Home</span>
+      <span>TV Shows</span>
+      <span>Movies</span>
+      <span>My List</span>
+    </div>
+  </div>
 
+  <!-- HERO (Featured “Show”) -->
   <section class="hero">
-    <h1>The Cost of Streaming Over Time</h1>
-    <p>What started as cheap became expensive.</p>
-  </section>
-
-  <section class="chart-section">
-    <canvas id="priceChart"></canvas>
-  </section>
-
-  <section class="platform-row">
-    <h2>Explore Platforms</h2>
-
-    <div class="card" onclick="goToPlatform('netflix')">
-      <img src="../assets/logos/netflix.png">
-      <p>Netflix</p>
+    <div class="hero-content">
+      <h1>The Rise of Streaming Prices</h1>
+      <p>
+        What started as a cheap alternative to cable has become a fragmented,
+        expensive ecosystem.
+      </p>
+      <button onclick="goToPlatform('overview')">▶ Start Watching</button>
     </div>
-
-    <div class="card" onclick="goToPlatform('spotify')">
-      <img src="../assets/logos/spotify.png">
-      <p>Spotify</p>
-    </div>
-
   </section>
 
-  <script src="../js/charts.js"></script>
+  <!-- ROW 1 -->
+  <section class="row">
+    <h2>Trending Platforms</h2>
+    <div class="row-posters">
+
+      <div class="poster" onclick="goToPlatform('netflix')">
+        <img src="../assets/logos/netflix.png">
+      </div>
+
+      <div class="poster" onclick="goToPlatform('spotify')">
+        <img src="../assets/logos/spotify.png">
+      </div>
+
+      <div class="poster" onclick="goToPlatform('disney')">
+        <img src="../assets/logos/disney.png">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ROW 2 -->
+  <section class="row">
+    <h2>Biggest Price Jumps</h2>
+    <div class="row-posters">
+
+      <div class="poster large" onclick="goToPlatform('netflix')">
+        <img src="../assets/logos/netflix.png">
+      </div>
+
+      <div class="poster large" onclick="goToPlatform('hulu')">
+        <img src="../assets/logos/hulu.png">
+      </div>
+
+    </div>
+  </section>
+
   <script src="../js/main.js"></script>
-  <link rel="stylesheet" href="../css/styles.css">
 </body>
 </html>
