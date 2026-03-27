@@ -110,6 +110,35 @@ body {
   width: 200px;
 }
 
+/*pricing*/
+
+.pricing-section {
+  padding: 40px;
+}
+
+.plans {
+  display: flex;
+  gap: 20px;
+}
+
+.plan {
+  background: #222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 150px;
+}
+
+.plan.highlight {
+  border: 2px solid red;
+}
+
+.plan button {
+  margin-top: 10px;
+  padding: 8px;
+  cursor: pointer;
+}
+
 /* PLATFORM PAGE */
 .platform-hero {
   height: 60vh;
