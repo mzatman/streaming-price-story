@@ -52,3 +52,13 @@ function scrollToContent() {
     behavior: "smooth"
   });
 }
+
+
+document.querySelectorAll(".plan button").forEach(btn => {
+  btn.addEventListener("click", () => {
+    alert("You have been automatically upgraded.");
+  });
+});
+
+
+
