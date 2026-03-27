@@ -1,1 +1,47 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: white;
+}
 
+/* Login */
+.login-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  text-align: center;
+}
+
+input, button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Cards */
+.platform-row {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  cursor: pointer;
+  width: 150px;
+}
+
+.card img {
+  width: 100%;
+}
