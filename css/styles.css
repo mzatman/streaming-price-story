@@ -200,3 +200,21 @@ body {
   padding: 10px 20px;
   cursor: pointer;
 }
+
+
+/*newer*/
+.episodes {
+  padding: 40px;
+}
+
+.episode {
+  background: #222;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.episode:hover {
+  background: #333;
+}
