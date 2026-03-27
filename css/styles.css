@@ -232,3 +232,9 @@ body {
 .hero-overlay {
   max-width: 600px;
 }
+
+
+/*new other details*/
+body {
+  font-family: 'Inter', sans-serif;
+}
