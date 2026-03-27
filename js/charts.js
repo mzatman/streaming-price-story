@@ -18,3 +18,8 @@ new Chart(ctx, {
     ]
   }
 });
+
+function updateYear(year) {
+  console.log("Switch chart to year:", year);
+  setProgress("overview", Math.min(100, (year - 2015) * 20));
+}
